@@ -17,3 +17,6 @@ def send_mail(message, reciver='Yarinkalfon45@gmail.com'):
 """
 enlmypwchxzcjwrw
 """
+"""
+mcowebdzgevwbqqj
+"""
