@@ -18,5 +18,5 @@ Topic: {select}
     """
 if submit_button:
     sm.send_mail(message)
-    st.info("Your message has been submitted.I will contact you soon.Thank you!")
+    st.info("Your message has been submitted successfully. I will contact you as soon as possible!")
 
