@@ -6,7 +6,7 @@ import os
 def send_mail(message, reciver='Yarinkalfon45@gmail.com'):
     host = 'smtp.gmail.com'
     port = 465
-    uname = 'Yarinkalfon45@gmail.com'
+    uname = 'contactyarin@gmail.com'
     password = os.getenv("Password")
     context = ssl.create_default_context()
     with smtp.SMTP_SSL(host, port, context=context) as server:
