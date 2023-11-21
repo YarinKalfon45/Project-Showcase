@@ -12,17 +12,17 @@ def send_mail(message, reciver='Yarinkalfon45@gmail.com'):
     uname =  "contactyarin@gmail.com" #streamlit.secrets("uname")
     password = "mcowebdzgevwbqqj" # streamlit.secrets("password")
 
-    server = smtp.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(uname, password)
-    server.sendmail(uname, reciver,message)
-    server.quit()
+    # server = smtp.SMTP('smtp.gmail.com', 587)
+    # server.starttls()
+    # server.login(uname, password)
+    # server.sendmail(uname, reciver,message)
+    # server.quit()
 
 
     # server = smtp.SMTP(host,port_st)
-    # with smtp.SMTP(host,port_st) as server:
-    #     server.login(uname,password)
-    #     server.sendmail(uname,reciver,message)
+    with smtp.SMTP(host,port_st) as server:
+        server.login(uname,password)
+        server.sendmail(uname,reciver,message)
 
     # context = ssl.create_default_context()
     # with smtp.SMTP_SSL(host, port, context=context) as server:
