@@ -8,7 +8,8 @@ with col1:
 
 with col2:
     st.header("Yarin Kalfon")
-    st.info("""Hi, My name is Yarin.\n\n I'm a 3rd year student at Ben-Gurion University.\n\nThis website is created to
+    st.info("""Hi, My name is Yarin.\n\n I'm a 3rd year Communication systems engineering student 
+    at Ben-Gurion University.\n\nThis website is created to
      showcase my programing skills.
             """)
 
