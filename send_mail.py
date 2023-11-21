@@ -9,8 +9,8 @@ def send_mail(message, reciver='Yarinkalfon45@gmail.com'):
     host = 'smtp.gmail.com'
     port_git = 465
     port_st = 587
-    uname = streamlit.secrets("uname")
-    password = streamlit.secrets("password")
+    uname =  "contactyarin@gmail.com" #streamlit.secrets("uname")
+    password = "mcowebdzgevwbqqj" # streamlit.secrets("password")
 
     server = smtp.SMTP('smtp.gmail.com', 587)
     server.starttls()
