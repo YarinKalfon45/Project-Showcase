@@ -11,7 +11,6 @@ def send_mail(message, reciver='Yarinkalfon45@gmail.com'):
     port_st = 587
     uname =streamlit.secrets("db_username") # "contactyarin@gmail.com" #streamlit.secrets("uname")
     password = streamlit.secrets("db_username") #"mcowebdzgevwbqqj" # streamlit.secrets("password")
-
     server = smtp.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login(uname, password)
