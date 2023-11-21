@@ -7,14 +7,19 @@ import streamlit
 
 def send_mail(message, reciver='Yarinkalfon45@gmail.com'):
     host = 'smtp.gmail.com'
-    port = 465
+    port_git = 465
+    port_st = 587
     uname = streamlit.secrets("uname")
     password = streamlit.secrets("password")
-    context = ssl.create_default_context()
-    with smtp.SMTP_SSL(host, port, context=context) as server:
-        server.ehlo_or_helo_if_needed()
-        server.login(uname, password)
-        server.sendmail(uname, reciver, message)
+    # server = smtp.SMTP(host,port_st)
+    with smtp.SMTP(host,port_st) as server:
+        server.login(uname,password)
+        server.sendmail(uname,reciver,message)
+
+    # context = ssl.create_default_context()
+    # with smtp.SMTP_SSL(host, port, context=context) as server:
+    #     server.login(uname, password)
+    #     server.sendmail(uname, reciver, message)
 
 
 """
