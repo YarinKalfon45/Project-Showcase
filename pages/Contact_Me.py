@@ -2,7 +2,7 @@ import streamlit as st
 import send_mail as sm
 
 st.header("Contact me")
-options = ["Teach me how to live like you", "Tell me more about your program","Other"]
+options = ["Tell me more about your program","Other"]
 
 with st.form(key="Email_form"):
     usr_email = st.text_input("Your Email address:",key="usr_mail")
